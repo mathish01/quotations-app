@@ -1,13 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>La liste des citations</title>
-    <h1>Mes citations</h1>
-    <h2>Gestionnaire de citations en ligne</h2>
-    <h3>0 citations</h3>
-    <hr> 
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type = "module" src = "script.js" defer></script>
+        <title>La liste des citations</title>
+    </head>
+    <body>
+        <h1>Mes citations</h1>
+        <h2>Gestionnaire de citations en ligne</h2>
+        <h3>0 citations</h3>
+        <hr> 
     
     <form id = "quote-form">  
         <div>
@@ -23,13 +26,11 @@
         </div>
         
         <div> 
-            <button id = "send-core" class = "button">Soumettre la citation</button>
+            <button type="submit" id="send-core" class="button">Soumettre la citation</button>
         </div>
         
     </form>
-</head>
-<body>
-<div id = "quote-list">
+        <div id = "quote-list">
 
 <div class = "quote">
 <p class = "text">"On ne naît pas femme, on le devient"</p>
@@ -39,6 +40,6 @@
 
 </div> 
 
-<script type = "module" src = "script.js"></script>
 </body>
 </html>
+!

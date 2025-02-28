@@ -1,14 +1,14 @@
-const sendcore = document.getElementById('send-core'); 
+const form = document.getElementById('quote-form'); 
 const text = document.getElementById('grab-cote')
 const author = document.getElementById('author-name')
 
-function submit (text, author) {
-    console.log(text, author)
-    
-}
 
-sendcore.addEventListener('click' , () => {
-    
+
+form.addEventListener('submit' , (e) => {
+    e.preventDefault();
+    console.log("ok")
+
+
 })
 
 function addQuote(quote, author) {
@@ -23,6 +23,9 @@ function addQuote(quote, author) {
     
     const quoteList = document.getElementById('quote-list')
     quoteList.appendChild(newDiv)
+
+    newDiv.document.getElementById("text").textContent = quote 
+    newContent.document.getElementById("author").textContent = author 
 
 
 }
